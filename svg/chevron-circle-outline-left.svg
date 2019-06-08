@@ -1,0 +1,14 @@
+<svg id="chevron-circle-left" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="XMLID_1_">
+    <g id="Group_2" data-name="Group 2">
+      <g id="Group_1" data-name="Group 1">
+        <path id="Path_1" data-name="Path 1" d="M32,64A32,32,0,1,1,64,32,32.094,32.094,0,0,1,32,64ZM32,4A28,28,0,1,0,60,32,28.082,28.082,0,0,0,32,4Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+  <g id="Group_4" data-name="Group 4" transform="translate(62.4 64) rotate(180)">
+    <g id="Group_3" data-name="Group 3">
+      <path id="Path_2" data-name="Path 2" d="M26.4,47.4l-2.8-2.8L36.2,32,23.6,19.4l2.8-2.8L41.8,32Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

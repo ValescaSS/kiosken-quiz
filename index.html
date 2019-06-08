@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>kiosken-quiz</title>
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- kassa -->
+        <div class="kassa">
+            <div class="rubrik1">
+                <div class="flex-row">
+                    <a href="">
+                        <img src="svg/chevron-circle-outline-left.svg" id="chevron-circle-left" alt="chevron-left" />
+                    </a>
+                    <p class="tillbehor">Tillbehör</p>
+                </div>
+                <p class="rubrik2">Kassa</p>
+            </div>
+
+            <!-- kassa-box -->
+            <div class="kassa-box">
+                <div class="kunduppgifter">
+                    <div class="white-box">
+                        <div class="font-size-26">Kunduppgifter</div>
+                        <div>
+                            Hämta dina adressuppgifter genom att fylla i ditt personnummer.
+                        </div>
+                    </div>
+
+                    <div class="gray-box">
+                        <div class="flex-row space-between">
+                            <div>
+                                <div class="font-size-13 padding-bottom-5">
+                                    PERSONNUMMER:
+                                </div>
+                                <div class="flex-row">
+                                    <div class="prsnmr-siffror">
+                                        <div class="prsnmr-siffra">7</div>
+                                        <div class="prsnmr-siffra">2</div>
+                                        <div class="prsnmr-siffra">0</div>
+                                        <div class="prsnmr-siffra">3</div>
+                                        <div class="prsnmr-siffra">2</div>
+                                        <div class="prsnmr-siffra">4</div>
+                                    </div>
+
+                                    <div class="padding-5 margin-6">&ndash;</div>
+
+                                    <div class="prsnmr-siffror">
+                                        <div class="prsnmr-siffra">1</div>
+                                        <div class="prsnmr-siffra">0</div>
+                                        <div class="prsnmr-siffra">8</div>
+                                        <div class="prsnmr-siffra">3</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <table class="border prsnmr-table">
+                                        <tr>
+                                            <td class="border font-size-26">0</td>
+                                            <td class="border font-size-26">0</td>
+                                            <td class="border font-size-26">0</td>
+                                            <td class="border font-size-26">0</td>
+                                            <td class="border font-size-26">0</td>
+                                            <td class="border font-size-26">0</td>
+                                        </tr>
+                                    </table>
+
+                                    <div class="padding-5 prsnmr-table">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                    </div>
+
+                                    <table class="border prsnmr-table">
+                                        <tr>
+                                            <td class="border font-size-26">0</td>
+                                            <td class="border font-size-26">0</td>
+                                            <td class="border font-size-26">0</td>
+                                            <td class="border font-size-26">0</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-pencil" id="edit-btn-1"></i>
+                            </a>
+                        </div>
+                        <!-- overlay -->
+                        <div id="overlay" onclick="off()">
+                            <div class="flex-row space-between">
+                                <div>
+                                    <div class="font-size-13 padding-bottom-5">
+                                        PERSONNUMMER:
+                                    </div>
+                                    <div class="flex-row">
+                                        <div class="prsnmr-siffror">
+                                            <div class="prsnmr-siffra">7</div>
+                                            <div class="prsnmr-siffra">2</div>
+                                            <div class="prsnmr-siffra">0</div>
+                                            <div class="prsnmr-siffra">3</div>
+                                            <div class="prsnmr-siffra">2</div>
+                                            <div class="prsnmr-siffra">4</div>
+                                        </div>
+
+                                        <div class="padding-5 margin-6">&ndash;</div>
+
+                                        <div class="prsnmr-siffror">
+                                            <div class="prsnmr-siffra">1</div>
+                                            <div class="prsnmr-siffra">0</div>
+                                            <div class="prsnmr-siffra">8</div>
+                                            <div class="prsnmr-siffra">3</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-row">
+                                        <table class="border prsnmr-table">
+                                            <tr>
+                                                <td class="border font-size-26">0</td>
+                                                <td class="border font-size-26">0</td>
+                                                <td class="border font-size-26">0</td>
+                                                <td class="border font-size-26">0</td>
+                                                <td class="border font-size-26">0</td>
+                                                <td class="border font-size-26">0</td>
+                                            </tr>
+                                        </table>
+
+                                        <div class="padding-5 prsnmr-table">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                        </div>
+
+                                        <table class="border prsnmr-table">
+                                            <tr>
+                                                <td class="border font-size-26">0</td>
+                                                <td class="border font-size-26">0</td>
+                                                <td class="border font-size-26">0</td>
+                                                <td class="border font-size-26">0</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /overlay -->
+
+                    </div>
+
+                    <div class="white-box">
+                        <div>
+                            <div class="font-size-20 margin-bottom-6">Bo Göran</div>
+                            <div>
+                                Rävgatan 1b <br />
+                                123 45 Boliden
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- att-betala -->
+                <div class="att-betala">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="flex-row">
+                                    <img src="img/item1.png" class="margin-right" alt="image" />
+                                    <p class="margin-7">
+                                        <span class="bosch">Bosch</span><br />PST 700 E
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex-row space-between">
+                                    <a href="">
+                                        <i class="fa fa-plus-circle plus"></i>
+                                    </a>
+                                    <div class="font-size-20" id="item0">0</div>
+                                    <div>st</div>
+                                    <a href="">
+                                        <i class="fa fa-minus-circle minus"></i>
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="td-width">
+                                <div class="flex-row-left">
+                                    <div data-value="599" class="font-size-20 flex-row-left pris margin-right"
+                                        id="pris0">
+                                        0
+                                    </div>
+                                    <div>kr</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex-row">
+                                    <img src="img/item2.png" class="margin-right" alt="image" />
+                                    <p class="margin-7">
+                                        <span class="bosch">Bosch</span><br />10-delars
+                                        sticksågblad trä/metall
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex-row space-between">
+                                    <a href="">
+                                        <i class="fa fa-plus-circle plus"></i>
+                                    </a>
+                                    <div class="font-size-20" id="item1">0</div>
+                                    <div>st</div>
+                                    <a href="">
+                                        <i class="fa fa-minus-circle minus"></i>
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="td-width">
+                                <div class="flex-row-left">
+                                    <div data-value="139" class="font-size-20 flex-row-left pris margin-right"
+                                        id="pris1">
+                                        0
+                                    </div>
+                                    <div>kr</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div>
+                        <div class="leverans leverans-truck">
+                            <div class="flex-row">
+                                <i class="fa fa-truck margin-right"></i>
+                                <input type="radio" name="leverans" class="radio-btn" value="79" id="hemleverans" />
+                                <p>Hemleverans</p>
+                            </div>
+                            <div class="font-size-20">
+                                79 kr
+                            </div>
+                        </div>
+                        <div class="leverans">
+                            <div class="flex-row">
+                                <img src="img/butik.png" id="butik-img" alt="image" />
+                                <input type="radio" name="leverans" class="radio-btn" value="-79" id="butik" checked />
+                                <p>Hämta i butik</p>
+                            </div>
+                        </div>
+                        <div class="flex-row" id="betala">
+                            <div>
+                                Att betala:
+                            </div>
+                            <div id="total-pris">
+                                0
+                            </div>
+                            <div>kr</div>
+                        </div>
+                        <div class="flex-row" id="moms">
+                            <div>
+                                Varav moms:
+                            </div>
+                            <div id="total-moms">
+                                0
+                            </div>
+                            <div>kr</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /att-betala -->
+
+                <div class="kontaktuppgifter">
+                    <div class="white-box">
+                        <div class="font-size-26">Kontaktuppgifter</div>
+                        <div>
+                            Fyll i ditt mobillnummer för att få ett SMS när din order är
+                            redo.
+                        </div>
+                    </div>
+                    <div class="gray-box">
+                        <div class="flex-row space-between">
+                            <div>
+                                <div class="font-size-13 padding-bottom-5">
+                                    MOBILNUMMER:
+                                </div>
+                                <div class="mobil-siffror">
+                                    <div class="mobil-siffra">0</div>
+                                    <div class="mobil-siffra">7</div>
+                                    <div class="mobil-siffra">0</div>
+                                    <div class="mobil-siffra">1</div>
+                                    <div class="mobil-siffra">2</div>
+                                    <div class="mobil-siffra">4</div>
+                                    <div class="mobil-siffra">5</div>
+                                    <div class="mobil-siffra">6</div>
+                                    <div class="mobil-siffra">7</div>
+                                    <div class="mobil-siffra">8</div>
+                                </div>
+                                <table class="mobil-table border">
+                                    <tr>
+                                        <td class="border font-size-26">0</td>
+                                        <td class="border font-size-26">0</td>
+                                        <td class="border font-size-26">0</td>
+                                        <td class="border font-size-26">0</td>
+                                        <td class="border font-size-26">0</td>
+                                        <td class="border font-size-26">0</td>
+                                        <td class="border font-size-26">0</td>
+                                        <td class="border font-size-26">0</td>
+                                        <td class="border font-size-26">0</td>
+                                        <td class="border font-size-26">0</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-pencil" id="edit-btn-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /kassa-box -->
+        </div>
+        <!-- /kassa -->
+
+        <div class="knappsatsen">
+            <div class="font-size-20">Kassan</div>
+            <p class="padding-bottom-22">
+                Använd knappsatsen nedan för att mata in ditt personnummer respektive
+                mobilnummer i formuläret till vänster. Välj sedan ditt önskade
+                leveranssätt och klicka på "Beställ".
+            </p>
+            <div class="knappsatsen-siffror">
+                <a href="">
+                    1
+                </a>
+                <a href="">
+                    2
+                </a>
+                <a href="">
+                    3
+                </a>
+                <a href="">
+                    4
+                </a>
+                <a href="">
+                    5
+                </a>
+                <a href="">
+                    6
+                </a>
+                <a href="">
+                    7
+                </a>
+                <a href="">
+                    8
+                </a>
+                <a href="">
+                    9
+                </a>
+                <a href="">
+                    <img src="svg/delete.svg" id="delete" alt="delete" />
+                </a>
+                <a href="">
+                    0
+                </a>
+                <a href="">
+                    <i class="fa fa-check" id="fa-check"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="flex-row fortsatt-handla">
+            <a href="">
+                <img src="svg/reply.svg" id="reply" alt="reply" />
+            </a>
+            <div id="handla">Fortsätt handla</div>
+        </div>
+
+        <div class="bestall">
+            <div style="font-size: 26px;">BESTÄLL</div>
+            <a href="">
+                <img src="svg/chevron-circle-outline-right.svg" id="chevron-circle-right" alt="chevron-right" />
+            </a>
+        </div>
+    </div>
+    <!-- /container -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

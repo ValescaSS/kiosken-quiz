@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Gothic, sans-serif;
+    font-weight: lighter;
+    color: white;
+    line-height: 1.4rem;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    grid-template-rows: 5fr 0.5fr;
+    grid-template-areas:
+        "kassa knappsatsen"
+        "fortsatt-handla bestall";
+}
+
+.rubrik1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tillbehor {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
+
+.rubrik2 {
+    margin: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.kassa {
+    grid-area: kassa;
+    background-color: #f76800;
+    padding: 0 4.8% 4.8% 4.8%;
+}
+
+.knappsatsen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-area: knappsatsen;
+    background-color: #c55500;
+    padding: 3.5rem 1.7rem;
+    line-height: 1.2rem;
+    font-size: 15.5px;
+}
+
+.knappsatsen-siffror {
+    display: grid;
+    grid-gap: 9px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.knappsatsen-siffror a {
+    background-color: #863A00;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white;
+    height: 5rem;
+}
+
+.fortsatt-handla {
+    grid-area: fortsatt-handla;
+    background-color: #c55500;
+    padding: 2.7% 5%;
+}
+
+.bestall {
+    grid-area: bestall;
+    background-color: #703000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.kunduppgifter {
+    grid-area: kunduppgifter;
+    background-color: white;
+}
+
+.att-betala {
+    grid-area: betala;
+    background-color: white;
+    padding: 1rem 1.8rem 1.8rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(48, 48, 48);
+}
+
+.kontaktuppgifter {
+    grid-area: kontaktuppgifter;
+}
+
+.white-box {
+    background-color: white;
+    padding: 1.1rem 1.8rem;
+}
+
+.gray-box {
+    background-color: #E7E7E7;
+    padding: 1rem 1.8rem 0 1.8rem;
+}
+
+.kassa-box {
+    color: #292f33;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1.75fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "kunduppgifter betala"
+        "kontaktuppgifter betala";
+}
+
+.fa {
+    font-size: 22px;
+    color: #f76800;
+}
+
+#chevron-circle-left,
+#chevron-circle-right {
+    width: 3rem;
+}
+
+#chevron-circle-left,
+#reply {
+    margin-right: 15px;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+#fa-check {
+    font-size: 2rem;
+    color: white;
+}
+
+#delete {
+    width: 2rem;
+    color: white;
+}
+
+#reply {
+    margin-right: 2%;
+    width: 1.5rem;
+}
+
+.leverans {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2.4px dotted rgb(187, 187, 187);
+}
+
+.leverans-truck {
+    border-top: 2.4px dotted rgb(187, 187, 187);
+}
+
+.att-betala h2 {
+    margin-left: auto;
+}
+
+td {
+    border-bottom: 2.4px dotted rgb(187, 187, 187);
+}
+
+.fa-truck {
+    color: #7C7C7C;
+    font-size: 2rem;
+    margin: 5px;
+}
+
+#butik-img {
+    margin: 0 23px 0 4px;
+}
+
+.radio-btn {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.bosch {
+    color: #7C7C7C;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.margin-right {
+    margin-right: 25px;
+}
+
+.font-size-20 {
+    font-size: 22px;
+}
+
+.font-size-26 {
+    font-size: 26px;
+    margin: 14px 0 8px 0;
+}
+
+.margin-left-auto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-row-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.td-width {
+    width: 20%;
+}
+
+.font-size-13 {
+    font-size: 13px;
+}
+
+.number-font {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    display: flex;
+}
+
+.border {
+    border: 2px solid #7C7C7C;
+    border-collapse: collapse;
+    clip-path: inset(24px 0 0 0);
+}
+
+.clip-unset {
+    clip-path: unset;
+}
+
+.margin-bottom-6 {
+    margin-bottom: 6px;
+}
+
+.fa-pencil {
+    font-size: 1.5rem;
+    color: rgb(99, 98, 98);
+}
+
+.padding-5 {
+    padding: 0 5px;
+}
+
+.mobil-table,
+.prsnmr-table {
+    position: relative;
+    bottom: 20px;
+}
+
+.mobil-siffror,
+.prsnmr-siffror {
+    display: flex;
+    position: relative;
+    top: 0;
+}
+
+.mobil-siffra,
+.prsnmr-siffra {
+    padding: 0 2.9px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.padding-bottom-5 {
+    padding-bottom: 5px;
+}
+
+#betala {
+    width: 43%;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    margin: 20px 0 10px auto;
+}
+
+#moms {
+    width: 38%;
+    justify-content: space-between;
+    margin-left: auto;
+    color: #7C7C7C;
+}
+
+#handla {
+    font-size: 26px;
+    margin-left: 1.5rem
+}
+
+.margin-6 {
+    margin: 0 6px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.padding-bottom-22 {
+    padding-bottom: 22px;
+}
+
+.margin-7 {
+    margin: 7px;
+}
+
+#overlay {
+    position: absolute;
+    display: none;
+    width: 26.8%;
+    height: 13%;
+    top: 29%;
+    left: 3%;
+    background-color: white;
+    z-index: 2;
+    cursor: pointer;
+    box-shadow: 0px 3px 20px 0px #b1aeae;
+    padding: 1rem 2rem;
+}
+
+.inline {
+    display: inline;
+}
